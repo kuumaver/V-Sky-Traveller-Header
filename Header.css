@@ -1,0 +1,471 @@
+*{
+    font-family:"Inter";
+}
+
+.headernav{
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 10vh;
+    /* padding-top: 20px; */
+    padding: 40px;
+    box-shadow: 2px 2px 8px #00000097;
+    z-index: 20;
+    /* border-style: solid; */
+    border-color: red;
+
+
+
+}
+
+#V-skylogo{
+    width: 15rem;
+}
+
+.headcontent{ 
+    /* border-style: solid; */
+    width: 170vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#headerlogo{
+    width: 19rem;
+}
+
+.logoxnav{
+  display: flex;
+  justify-content: space-between;
+  /* border-style: solid; */
+  width: 97vh;
+}
+
+.navigation{
+    /* border-style: solid; */
+    list-style: none;
+    text-decoration: none;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50vh;
+    color: white;
+}
+
+/*  */
+
+.nav-bar {
+  border-color: red;
+  /* border-style: solid; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  position: relative;
+  background-color: black;
+  padding: 12px 20px;
+  padding-top:30px;
+ 
+}
+
+.menu {display: flex;}
+.menu li {padding-left: 50px;}
+.menu li {padding-top: 5px;}
+.menu li a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
+  /* text-transform: uppercase; */
+}
+.menu li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: 0.15s ease-in-out;
+}
+.menu li a:hover:after {width: 100%;}
+.open-menu , .close-menu {
+  position: absolute;
+  color:white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+}
+.open-menu {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.close-menu {
+  top: 20px;
+  right: 20px;
+}
+#check {display: none;}
+@media(max-width: 610px){
+  .menu {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 85%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      z-index: 100;
+      background-color: rgb(0, 0, 0);
+      transition: all 0.2s ease-in-out;
+  }
+
+  #V-skylogo{
+    width: 10rem;
+}
+
+  .menu li {margin-top: 40px;}
+  .menu li a {padding: 10px;}
+  .open-menu , .close-menu {display: block;}
+  #check:checked ~ .menu {right: 0;}
+}
+
+
+/*  */
+
+
+.booknow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 2px;
+  border-style: solid;
+  width: 18vh;
+  color: white;
+  height: 5vh;
+  padding: 10px;
+  padding-top: 21px;
+  border-radius: 80px;
+}
+
+.booknowcont{
+  display: flex;
+  justify-content: right;
+  /* border-style: solid; */
+  border-color: red;
+  width: 90vh;
+}
+
+
+.booknow a{
+  list-style: none;
+  text-decoration: none; 
+  color: white;
+  
+}
+
+@media(max-width: 1150px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 85%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: rgb(0, 0, 0);
+        transition: all 0.2s ease-in-out;
+        padding-bottom: 30px;
+    }
+
+    .nav-bar{
+      /* border-style: solid; */
+      border-color: red;
+      width: 120vh;
+    }
+
+    /* .newpage2banner{
+    border-style: solid;
+  } */
+
+  #bannerimgoverlay{
+    /* border-style: solid; */
+    border-color: red;
+    margin-left: 43vh;
+    width: 85vh;
+  }
+
+  .bannerimgoverlay{
+    /* border-style: solid; */
+    border-color: aqua;
+  }
+
+  .p1c{
+    width: 80vh;
+  }
+
+  .newpersp{
+    /* border-style: solid; */
+    text-align: left;
+    /* font-size: 15px */
+    justify-content: center;
+  }
+
+  .bannerimgoverlay{
+    width:50% ;
+  }
+
+  .contentlabel{
+    width: 90vh;
+  }
+
+  .contentlabel p{
+    width: 90vh;
+  }
+
+  .thanks{
+    padding: 80px;
+    /* width: ; */
+  }
+
+  .thankyou{
+  
+    border-style: solid;
+  }
+  
+    #V-skylogo{
+      width: 15rem;
+  }
+  
+    .menu li {margin-top: 40px;}
+    .menu li a {padding: 10px;}
+    .open-menu , .close-menu {display: block;}
+    #check:checked ~ .menu {right: 0;}
+  }
+
+/* Ipad Pro */
+@media(max-width: 1025px){
+  
+    #V-skylogo{
+      width: 20rem;
+  }
+
+  .nav-bar{
+    width: 65vh;
+  }
+
+  .headernav{
+    display: flex;
+    justify-content: center;
+  }
+
+  .booknowcont{
+    width: 30vh;
+    margin-left: 5vh;
+    /* border-style: solid; */
+    border-color: yellow;
+    justify-content: center;
+    padding-bottom: 10vh;
+    
+  }
+
+  li{
+    font-size: 2rem;
+  }
+
+}
+
+/* Ipad Air */
+  @media(max-width: 830px){
+  
+    #V-skylogo{
+      width: 15rem;
+  }
+
+  .nav-bar{
+    width: 65vh;
+  }
+
+  .headernav{
+    display: flex;
+    justify-content: center;
+  }
+
+  
+  .booknowcont{
+    width: 30vh;
+    margin-left: 5vh;
+    /* border-style: solid; */
+    border-color: yellow;
+    justify-content: center;
+    padding-bottom: 10vh;
+  }
+
+  li{
+    font-size: 1.5rem;
+  }
+
+  }
+
+/* Ipad Mini */
+  @media(max-width: 770px){
+  
+    #V-skylogo{
+      width: 15rem;
+  }
+
+  .nav-bar{
+    width: 65vh;
+  }
+
+  .headernav{
+    display: flex;
+    justify-content: center;
+  }
+
+
+  }
+
+
+/* Iphone 14 Pro Max, XR, Pixel 7,S20 Ultra res */
+@media(max-width: 455px){
+    #V-skylogo{
+      width: 15rem;
+  }
+
+  .close-menu{
+    size: 10px;
+  }
+
+  .nav-bar{
+    width:46vh;
+  }
+
+  .menu{
+    overflow-y:scroll ;
+  }
+
+  .headernav{
+    display: flex;
+    justify-content: center;
+  }
+
+  .booknowcont{
+    width: 30vh;
+    margin-left: 5vh;
+    /* border-style: solid; */
+    border-color: yellow;
+    justify-content: center;
+    padding-bottom: 10vh;
+    
+  }
+
+  li{
+    font-size: 1rem;
+  }
+
+
+  }
+
+
+/* Iphone 12 pro */
+  @media(max-width: 400px){
+    #V-skylogo{
+      width: 15rem;
+  }
+
+  .close-menu{
+    size: 10px;
+  }
+
+  .nav-bar{
+    width:45vh;
+  }
+
+  .headernav{
+    display: flex;
+    justify-content: center;
+  }
+
+  .booknowcont{
+    width: 30vh;
+    margin-left: 6vh;
+    padding-top: 5vh;
+    
+  }
+
+  }
+
+  /* Iphone SE pro */
+  @media(max-width: 380px){
+    #V-skylogo{
+      width: 15rem;
+  }
+
+  .close-menu{
+    size: 10px;
+  }
+
+  .nav-bar{
+    width:55vh;
+  }
+
+  .headernav{
+    display: flex;
+    justify-content: center;
+  }
+
+  .booknowcont{
+    width: 30vh;
+    margin-left: 8vh;
+    padding-top: 10vh;
+    
+  }
+
+  li{
+    font-size: 14px;
+  }
+
+  }
+
+    /* Samsung Galaxy S8 */
+    @media(max-width: 370px){
+        #V-skylogo{
+          width: 15rem;
+          /* border-style: solid; */
+      }
+
+      .fas{
+        /* border-style: solid; */
+        border-color: red;
+        padding-left: 5vh;
+      }
+    
+      .close-menu{
+        size: 10px;
+      }
+    
+      .nav-bar{
+        width:44vh;
+      }
+
+      .headernav{
+        display: flex;
+        justify-content: center;
+      }
+
+      
+    
+      }
